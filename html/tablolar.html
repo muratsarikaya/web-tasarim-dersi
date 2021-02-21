@@ -7,7 +7,38 @@
     <title>Tablolar</title>
 </head>
 <body>
-    <table border="1">
+    <table border="1" bordercolor="red" cellpadding="10" cellspacing="5">
+        <thead>
+            <tr>
+                <th>ad soyad</th>
+                <th>yaş</th>
+                <th>eğitim durumu</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ahmet</td>
+                <td colspan="2">üniversite</td>
+            </tr>
+            <tr>
+                <td rowspan="2">mehmet</td>
+                <td>21</td>
+                <td>lise</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>üniversite</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    toplam öğrenci : 3 öğrenci
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <!--<table border="1">
         <tr>
             <td>web tasarım dersi</td>
         </tr>
@@ -15,7 +46,6 @@
     <table border="1">
         <tr>
             <td>web tasarım dersi</td>
-            
         </tr>
         <tr>
             <td>web tasarım dersi 2</td>
@@ -34,6 +64,6 @@
         <tr>
             <td>web tasarım dersi 3</td>
         </tr>
-    </table>
+    </table>-->
 </body>
 </html>

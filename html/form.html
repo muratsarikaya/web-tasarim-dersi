@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar</title>
+</head>
+<body>
+    <form action="gonder.php" method="GET" enctype="multipart/form-data">
+        <div>
+            <span>Ad Soyad</span> <input size="30" type="text" name="adsoyad"  size="10" placeholder="murat" pattern="[A-Za-z]+">
+        </div><br>
+        <div>
+            <span>Parola</span> <input type="password" name="parolo" required>
+        </div><br>
+        <div><span>yaş</span><input type="number" name="yas"></div><br>
+        <div><span>sevdiğin dersler <br></span><input type="checkbox" name="matematik">matematik <input type="checkbox" name="kimya"> kimya 
+            <input type="checkbox" name="fizik"> fizik</div><br>
+        <div><span>Cinsiyet:</span> <input type="radio" name="cinsiyet">Erkek <input type="radio" name="cinsiyet">Kadın</div><br>
+        <div><input type="file"></div><br>
+        <div><span>E-mail</span><input type="email" required></div>
+        <!--<input type="image" src="istanbul.jpg">-->
+        <div><textarea name="mesaj" cols="30" rows="10"></textarea></div>
+        <div>İl:
+            <select name="">
+                <option value="" selected hidden>Bir İl Seçiniz</option>
+                <option value="Adana">Adana</option>
+                <option value="Antalya">Antalya</option>
+                <option value="Ankara">Ankara</option>
+                <option value="İstanbul">İstanbul</option>
+            </select>
+        </div>
+        <div><input type="reset"><input type="submit">Gönder</div>
+    </form>
+</body>
+</html>
