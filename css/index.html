@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        p,h1{color:brown;} /*h1 ve p elementlerin rengini sarı yapar.*/
+        .yazi-rengi{
+            color:yellow
+        } 
+         *{ /*bütün elementlerin rengini kırmızı yapar.*/
+            color:red;
+        }
+        div > p { /* div  elementinin sadece cocuk elementi olan p elementinin  rengini blueviolet yapar.*/
+            color:blueviolet;
+        }
+        
+        div p { /* div  elementinin cocuk elementi olan p elementlerinin  rengini blueviolet yapar.*/
+            color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>HTML Dersleri</p>
+        <h1>CSS Dersleri</h1>
+        <span>
+            <p>Test Başlık</p>
+        </span>
+    </div>
+    <h3>Bu bir başlık</h3>
+    <p>HTML CSS Dersleri</p>
+    <h1 class="yazi-rengi yazi-boyutu">Javascript Dersleri</h1>
+    <div>
+        <p class="yazi-rengi yazi-boyutu">Python Dersleri</p>
+    </div>
+    <h2 id="baslik"> bu bir başlıktır</h2>
+    <a href="" style="font-size:18px;">Anasayfa</a>
+</body>
+</html>
