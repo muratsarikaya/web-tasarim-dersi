@@ -4,3 +4,39 @@
     font-size:35px;
     color: blue;
 }
+/* [title~="html"]{
+    color:red;
+    background-color: antiquewhite;   
+   } */
+
+/* [title*="html" i]{
+    color:red;
+    background-color: antiquewhite;   
+   } */
+   /* [title^="h"]{
+    color:red;
+    background-color: antiquewhite;   
+   } */
+   div{
+       height: 50px;
+   }
+   div[lang|="en"]{
+    color:red;
+    background-color: antiquewhite;   
+   }
+   [title$="aciklama"]{
+    color:cadetblue;
+    background-color: coral;  
+   }
+   [id="sayi"][href^="http"][href *="html"][href$="net"]{
+       color: coral;
+       background-color: darkcyan;
+       font-size:large;
+   }
+   :target{
+       background-color: darkorchid;
+       color:darksalmon;
+   }
+   :root{
+       background-color: dodgerblue;
+   }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Özelliği</title>
+    <style>
+        .div{
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+        .bir{
+            background-color: blue;
+            z-index: 5;
+        }
+        .iki {
+            background-color: brown;
+            z-index: 4;
+        }
+        .uc{
+            background-color: burlywood;
+            z-index:3;
+        }
+        .dort{
+            background-color: darkcyan;
+            z-index: 2;
+        }
+        .bes{
+            background-color: darkslateblue;
+            z-index: 1;
+        }
+        .wrapper{
+            width:500px;
+            height: 300px;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="div bir"></div>
+    </div>
+    
+    <div class="div iki"></div>
+    <div class="div uc"></div>
+    <div class="div dort"></div>
+    <div class="div bes"></div>
+</body>
+</html>
